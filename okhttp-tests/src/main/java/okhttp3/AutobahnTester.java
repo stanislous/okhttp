@@ -139,6 +139,8 @@ public final class AutobahnTester {
 
       @Override public void onFailure(WebSocket webSocket, Throwable t, Response response) {
         latch.countDown();
+@Override public void onFailure(WebSocket webSocket, Throwable t, Response response) {
+        latch.countDown();
       }
     });
     try {
